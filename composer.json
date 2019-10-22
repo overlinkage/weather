@@ -1,0 +1,28 @@
+{
+    "name": "overlinkage\/weather",
+    "description": "A weather SDK",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "overlinkage",
+            "email": "overlinkage@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "phpunit/phpunit": "^8.4",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Overlinkage\\Weather\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Overlinkage\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
